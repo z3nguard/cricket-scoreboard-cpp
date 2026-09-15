@@ -157,7 +157,7 @@ int main() {
 
     int toss = rand() % 2;
     cout << "Toss result: " << tossResult(toss) << "\n";
-    bool userWins = (userCall == tossResult(toss));
+    bool userWins = (userCall == (toss == 0 ? "heads" : "tails"));
 
     string userDecision, opponentDecision;
     if (userWins) {
